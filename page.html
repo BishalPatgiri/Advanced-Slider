@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+
+            animation: effet 2000ms ease-in 0ms;
+            transform: translateY(0px) ;
+            color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #first_in{
+            background-image: linear-gradient(rgba(240, 233, 233, 0.139),rgba(247, 240, 240, 0.124)),url("https://gmedia.playstation.com/is/image/SIEPDC/Days-of-play-homepage-hero-mobile-en-01-11may22?$800px$&fmt=webp");
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 550px;
+        }
+
+        #first_in img{
+            width: 28%;
+            height: 250px;
+            margin-top: 60px;
+            animation: effet 2000ms ease-in 0ms;
+            transform: translateY(0px) ;
+        }
+        #first_in>p:nth-child(2){
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: lighter;
+            
+        }
+        #first_in>p:nth-child(3){
+            line-height: 50px;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+        button{
+            margin-top: 35px;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 22px;
+            border: 0px;
+            animation: effet 2000ms ease-in 0ms;
+            transform: translateY(0px) ;
+        }
+        button:hover{
+            outline: 2px solid white;
+            border: 3px solid rgb(72, 142, 221);
+        }
+        @keyframes effet{
+            0%{
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            25%{
+                opacity: 0.2;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            70%{
+                opacity: 0.7;
+            }
+            100%{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+        #second,#third,#four,#five{
+            width: 100%;
+            background-image: linear-gradient(rgba(58, 56, 56, 0.139),rgba(83, 79, 79, 0.124)),url("https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-2-7-update-hero-banner-desktop-01-ps4-en-24may22?$2400px$&fmt=webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 550px;
+        }
+        #third{
+            background-image: linear-gradient(rgba(58, 56, 56, 0.139),rgba(83, 79, 79, 0.124)),url("https://gmedia.playstation.com/is/image/SIEPDC/destiny2-season-of-the-haunted-desktop-01-25may22?$2400px$&fmt=webp");
+        }
+        #four{
+            background-image: linear-gradient(rgba(58, 56, 56, 0.139),rgba(83, 79, 79, 0.124)),url("https://gmedia.playstation.com/is/image/SIEPDC/rollerdrome-hero-banner-desktop-01-ps4-ps5-en-19may22?$2400px$");
+        }
+        #five{
+            background-image: linear-gradient(rgba(58, 56, 56, 0.139),rgba(83, 79, 79, 0.124)),url("https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-hero-banner-desktop-01-en-07may21?$2400px$");
+        }
+
+        #second_in,#third_in,#four_in,#five_in{
+            width: 40%;
+            margin-left: 100px;
+            padding-top: 50px;
+        }
+   
+        #second img,#third img,#four img,#five img{
+            width: 70%;
+            animation: effet 2000ms ease-in 100ms;
+            transform: translateY(0px) ;
+        }
+         #third img,#four img{
+             margin-top: 100px;
+         }
+         #five img{
+            margin-top: 50px;
+         }
+
+        #second>div>p:nth-child(2),#third>div>p:nth-child(2),#four>div>p:nth-child(2),#five>div>p:nth-child(2)
+        {
+            font-size: 42px;
+            letter-spacing: 2px;
+        }
+
+        #third>div>p:nth-child(2),#four>div>p:nth-child(2), #five>div>p:nth-child(2){
+            margin-top: 25px;
+        }
+        #second>div>p:nth-child(3),#third>div>p:nth-child(3),#four>div>p:nth-child(3),#five>div>p:nth-child(3){
+            margin-top: 30px;
+            line-height: 25px;
+        }
+        #second button{
+            width: 130px;
+        }
+
+        #land>div{
+    margin-left: 0px;
+    animation-name: example;
+    animation-duration: 3000ms; 
+}
+
+@keyframes example {
+  from {margin-left: 800px;}
+  to {margin-left: 0px;}
+}
+
+    </style>
+</head>
+<body>
+    <div id="land">
+
+    </div>
+    <!-- <div id="first_in">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/Days-of-Play-logo-01-en-07may21?$800px--t$" alt="">
+        <p>Join The Celebration</p>
+        <p>Pick-up big discounts on PlayStation games, hardware and merchandise fron 25th may to 5th June</p>
+        <button>Browse Details</button>
+    </div> -->
+
+    <!-- <div id="second">
+        <div id="second_in">
+            <img src="https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-white-logo-01-ps4-16nov21$en?$1200px--t$" alt="">
+            <p>Hidden Dreams in The Depths</p>
+            <p>Fight alonghside Yelan and Kuki Shinobu, and continue exploring The Chasm,in a new updates for the hit free-to-play open-world action RPG</p>
+            <button>Play for Free</button>
+        </div>
+
+    </div> -->
+
+    <!-- <div id="third">
+        <div id="third_in">
+            <img src="https://gmedia.playstation.com/is/image/SIEPDC/destiny2-season-of-the-haunted-logo-01-25may22$en?$1200px--t$" alt="">
+            <p>Return to the Leviathan</p>
+            <p>New Stories, rewards and activities. Explore the once-opulent Leviathan, now currupted by nightmares</p>
+            <button>Find out More</button>
+        </div>
+
+    </div> -->
+
+    <!-- <div id="four">
+        <div id="four_in">
+            <img src="https://gmedia.playstation.com/is/image/SIEPDC/rollerdrome-logo-01-ps4-ps5-en-19may22?$1200px--t$" alt="">
+            <p>Roller Drome revealed!</p>
+            <p>Get ready for an original adreneline-pumping action shooter, coming to PS5, PS$ August 16th</p>
+            <button>Find out More</button>
+        </div>
+
+   </div> -->
+
+    <!-- <div id="five">
+        <div id="five_in">
+            <img src="https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-white-logo-01-ps5-07may21$en?$1200px--t$" alt="">
+            <p>Rise above our ruin</p>
+            <p>Joy Aloy as she braves the Forbidden West - a megistic but dangeous frontier that conceals mysterious new threats</p>
+            <button>Find out More</button>
+        </div>
+
+    </div> -->
+ 
+</body>
+</html>
+<script>
+   function display_first_slide(){
+    document.getElementById("land").innerHTML="";
+
+
+    let div1=document.createElement("div")
+    div1.setAttribute("id","first_in")
+
+    let image=document.createElement("img")
+    image.src="https://gmedia.playstation.com/is/image/SIEPDC/Days-of-Play-logo-01-en-07may21?$800px--t$"
+
+    let heading=document.createElement("p")
+    heading.innerText="Join The Celebration"
+
+    let text=document.createElement("p")
+    text.innerText="Pick-up big discounts on PlayStation games, hardware and merchandise fron 25th may to 5th June"
+
+    let btn=document.createElement("button")
+    btn.innerText="Browse Details"
+
+    div1.append(image,heading,text,btn)
+    document.getElementById("land").append(div1)
+
+   }
+
+//    display_first_slide()
+
+   /////////////////////
+
+   function display_second_slide(){
+    document.getElementById("land").innerHTML="";
+
+    let div=document.createElement("div")
+    div.setAttribute("id","second")
+
+    let div1=document.createElement("div")
+    div1.setAttribute("id","second_in")
+
+    let image=document.createElement("img")
+    image.src="https://gmedia.playstation.com/is/image/SIEPDC/genshin-impact-white-logo-01-ps4-16nov21$en?$1200px--t$"
+
+    let heading=document.createElement("p")
+    heading.innerText="Hidden Dreams in The Depths"
+
+    let text=document.createElement("p")
+    text.innerText="Fight alonghside Yelan and Kuki Shinobu, and continue exploring The Chasm,in a new updates for the hit free-to-play open-world action RPG"
+
+    let btn=document.createElement("button")
+    btn.innerText="Play for Free"
+
+    div1.append(image,heading,text,btn)
+    div.append(div1)
+
+    document.getElementById("land").append(div)
+
+   }
+
+//    display_second_slide()
+
+   ////////////////////////
+
+   function display_third_slide(){
+    document.getElementById("land").innerHTML="";
+
+    let div=document.createElement("div")
+    div.setAttribute("id","third")
+
+    let div1=document.createElement("div")
+    div1.setAttribute("id","third_in")
+
+    let image=document.createElement("img")
+    image.src="https://gmedia.playstation.com/is/image/SIEPDC/destiny2-season-of-the-haunted-logo-01-25may22$en?$1200px--t$"
+
+    let heading=document.createElement("p")
+    heading.innerText="Return to the Leviathan"
+
+    let text=document.createElement("p")
+    text.innerText="New Stories, rewards and activities. Explore the once-opulent Leviathan, now currupted by nightmares"
+
+    let btn=document.createElement("button")
+    btn.innerText="Find out More"
+
+    div1.append(image,heading,text,btn)
+    div.append(div1)
+
+    document.getElementById("land").append(div)
+
+   }
+
+//    display_third_slide()
+
+   ////////////////////
+
+   function display_four_slide(){
+    document.getElementById("land").innerHTML="";
+
+    let div=document.createElement("div")
+    div.setAttribute("id","four")
+
+    let div1=document.createElement("div")
+    div1.setAttribute("id","four_in")
+
+    let image=document.createElement("img")
+    image.src="https://gmedia.playstation.com/is/image/SIEPDC/rollerdrome-logo-01-ps4-ps5-en-19may22?$1200px--t$"
+
+    let heading=document.createElement("p")
+    heading.innerText="Roller Drome revealed!"
+
+    let text=document.createElement("p")
+    text.innerText="Get ready for an original adreneline-pumping action shooter, coming to PS5, PS$ August 16th"
+
+    let btn=document.createElement("button")
+    btn.innerText="Find out More"
+
+    div1.append(image,heading,text,btn)
+    div.append(div1)
+
+    document.getElementById("land").append(div)
+
+   }
+
+//    display_four_slide()
+
+   //////////////////////
+   
+function display_five_slide(){
+    document.getElementById("land").innerHTML="";
+
+    let div=document.createElement("div")
+    div.setAttribute("id","five")
+
+    let div1=document.createElement("div")
+    div1.setAttribute("id","five_in")
+
+    let image=document.createElement("img")
+    image.src="https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-white-logo-01-ps5-07may21$en?$1200px--t$"
+
+    let heading=document.createElement("p")
+    heading.innerText="Rise above our ruin"
+
+    let text=document.createElement("p")
+    text.innerText="Joy Aloy as she braves the Forbidden West - a megistic but dangeous frontier that conceals mysterious new threats"
+
+    let btn=document.createElement("button")
+    btn.innerText="Find out More"
+
+    div1.append(image,heading,text,btn)
+    div.append(div1)
+
+    document.getElementById("land").append(div)
+
+   }
+
+//    display_five_slide()
+
+   let i=0;
+   display_first_slide();
+   i++
+   setInterval(function(){
+       if(i==5)
+       {
+           i=0;
+       }
+       if(i==0)
+       {
+        display_first_slide()
+       }
+       else if(i==1)
+       {
+        display_second_slide()
+       }
+       else if(i==2)
+       {
+        display_third_slide()
+       }
+       else if(i==3)
+       {
+        display_four_slide()
+       }
+       else if(i==4)
+       {
+        display_five_slide()
+       }
+
+       i++
+
+   },3000)
+
+//    i++;
+//    let slide_array=[display_first_slide(),display_second_slide(),display_third_slide(),display_four_slide(),display_first_slide()]
+
+
+</script>
